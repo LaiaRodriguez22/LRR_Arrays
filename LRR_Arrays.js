@@ -14,4 +14,6 @@ Crea una funció JavaScript que crei un array de 6 colors per nom (‘verd’, �
 
 function lrr_Colors(){
     let array = ['verd', 'vermell', 'groc', 'blau', 'negre', 'blanc']
+
+    
 }
