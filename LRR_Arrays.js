@@ -52,141 +52,141 @@ function lrrFunctionsArray(){
 
     //CONCAT:
     let arrayConcat = arrayNoms.concat('Juan Daniel');
-    document.writeln('<b>CONCAT:</b>' + arrayNoms +' > '+ arrayConcat + '</br>');
+    document.writeln('</br><b>CONCAT:</b>' + arrayNoms +' > '+ arrayConcat + '</br>');
 
     //CONSTRUCTOR:
     let arrayConstructor;
-    document.writeln('<b>CONSTRUCTOR:</b>' + arrayNoms +' > '+ arrayConstructor + '</br>');
+    document.writeln('</br><b>CONSTRUCTOR:</b>' + arrayNoms +' > '+ arrayConstructor + '</br>');
 
     //COPYWITHIN:
     let arrayCopy;
-    document.writeln('<b>COPY:</b>' + arrayNoms +' > '+ arrayCopy + '</br>');
+    document.writeln('</br><b>COPY:</b>' + arrayNoms +' > '+ arrayCopy + '</br>');
 
     //ENTRIES:
     let arrayEntries;
-    document.writeln('<b>ENTRIES:</b>' + arrayNoms +' > '+ arrayEntries + '</br>');
+    document.writeln('</br><b>ENTRIES:</b>' + arrayNoms +' > '+ arrayEntries + '</br>');
 
     //EVERY:
     let arrayEvery;
-    document.writeln('<b>EVERY:</b>' + arrayNoms +' > '+ arrayEvery + '</br>');
+    document.writeln('</br><b>EVERY:</b>' + arrayNoms +' > '+ arrayEvery + '</br>');
 
     //FILL:
     let arrayFill;
-    document.writeln('<b>FILL:</b>' + arrayNoms +' > '+ arrayFill + '</br>');
+    document.writeln('</br><b>FILL:</b>' + arrayNoms +' > '+ arrayFill + '</br>');
 
     //FILTER:
     let arrayFilter;
-    document.writeln('<b>FILTER:</b>' + arrayNoms +' > '+ arrayFilter + '</br>');
+    document.writeln('</br><b>FILTER:</b>' + arrayNoms +' > '+ arrayFilter + '</br>');
 
     //FIND:
     let arrayFind;
-    document.writeln('<b>FIND:</b>' + arrayNoms +' > '+ arrayFind + '</br>');
+    document.writeln('</br><b>FIND:</b>' + arrayNoms +' > '+ arrayFind + '</br>');
 
     //FINDINDEX:
     let arrayFindInd;
-    document.writeln('<b>FIND INDEX:</b>' + arrayNoms +' > '+ arrayFindInd + '</br>');
+    document.writeln('</br><b>FIND INDEX:</b>' + arrayNoms +' > '+ arrayFindInd + '</br>');
 
     //FLAT:
     let arrayFlat;
-    document.writeln('<b>FLAT:</b>' + arrayNoms +' > '+ arrayFlat + '</br>');
+    document.writeln('</br><b>FLAT:</b>' + arrayNoms +' > '+ arrayFlat + '</br>');
 
     //FLATMAP:
     let arrayFlatM;
-    document.writeln('<b>FLAT MAP:</b>' + arrayNoms +' > '+ arrayFlatM + '</br>');
+    document.writeln('</br><b>FLAT MAP:</b>' + arrayNoms +' > '+ arrayFlatM + '</br>');
 
     //FOR EACH
     let arrayFE;
-    document.writeln('<b>FOR EACH:</b>' + arrayNoms +' > '+ arrayFE + '</br>');
+    document.writeln('</br><b>FOR EACH:</b>' + arrayNoms +' > '+ arrayFE + '</br>');
 
     //FROM:
     let arrayFrom;
-    document.writeln('<b>FROM:</b>' + arrayNoms +' > '+ arrayFrom + '</br>');
+    document.writeln('</br><b>FROM:</b>' + arrayNoms +' > '+ arrayFrom + '</br>');
 
     //INCLUDES:
     let arrayInclude;
-    document.writeln('<b>INCLUDES:</b>' + arrayNoms +' > '+ arrayInclude + '</br>');
+    document.writeln('</br><b>INCLUDES:</b>' + arrayNoms +' > '+ arrayInclude + '</br>');
 
     //INDEX:
     let arrayInd;
-    document.writeln('<b>INDEX:</b>' + arrayNoms +' > '+ arrayInd + '</br>');
+    document.writeln('</br><b>INDEX:</b>' + arrayNoms +' > '+ arrayInd + '</br>');
 
     //ISARRAY:
     let arrayIsArr;
-    document.writeln('<b>ENTRIES:</b>' + arrayNoms +' > '+ arrayEntries + '</br>');
+    document.writeln('</br><b>IS ARRAY:</b>' + arrayNoms +' > '+ arrayIsArr + '</br>');
 
     //JOIN:
-    let arrayJoin;
-    document.writeln('<b>ENTRIES:</b>' + arrayNoms +' > '+ arrayEntries + '</br>');
+    let arrayJoin = arrayNoms.join(', juju ');
+    document.writeln('</br><b>JOIN:</b>' + arrayNoms +' > '+ arrayJoin + '</br>');
     
     //KEYS:
-    let arrayKeys;
-    document.writeln('<b>ENTRIES:</b>' + arrayNoms +' > '+ arrayEntries + '</br>');
+    let arrayKeys = arrayNoms.keys();
+    document.writeln('</br><b>KEYS:</b>' + arrayNoms +' > '+ arrayKeys + '</br>');
 
     //LASTINDEX:
     let arrayLastI;
-    document.writeln('<b>ENTRIES:</b>' + arrayNoms +' > '+ arrayEntries + '</br>');
+    document.writeln('</br><b>LAST INDEX:</b>' + arrayNoms +' > '+ arrayLastI + '</br>');
 
     //LENGTH
     let arrayLength;
-    document.writeln('<b>ENTRIES:</b>' + arrayNoms +' > '+ arrayEntries + '</br>');
+    document.writeln('</br><b>LENGHT:</b>' + arrayNoms +' > '+ arrayLength + '</br>');
     
     //MAP 
     let arrayMap;
-    document.writeln('<b>ENTRIES:</b>' + arrayNoms +' > '+ arrayEntries + '</br>');
+    document.writeln('</br><b>MAP:</b>' + arrayNoms +' > '+ arrayMap + '</br>');
 
     //POP
     let arrayPop;
-    document.writeln('<b>ENTRIES:</b>' + arrayNoms +' > '+ arrayEntries + '</br>');
+    document.writeln('</br><b>POP:</b>' + arrayNoms +' > '+ arrayPop + '</br>');
 
     //PROTOTYPE
     let arrayProto;
-    document.writeln('<b>ENTRIES:</b>' + arrayNoms +' > '+ arrayEntries + '</br>');
+    document.writeln('</br><b>PROTOTYPE:</b>' + arrayNoms +' > '+ arrayProto + '</br>');
     
     //PUSH
     let arrayPush;
-    document.writeln('<b>ENTRIES:</b>' + arrayNoms +' > '+ arrayEntries + '</br>');
+    document.writeln('</br><b>PUSH:</b>' + arrayNoms +' > '+ arrayPush + '</br>');
 
     //REDUCE 
     let arrayReduce;
-    document.writeln('<b>ENTRIES:</b>' + arrayNoms +' > '+ arrayEntries + '</br>');
+    document.writeln('</br><b>REDUCE:</b>' + arrayNoms +' > '+ arrayReduce + '</br>');
 
     //REDUCERIGHT 
     let arrayReduceR;
-    document.writeln('<b>ENTRIES:</b>' + arrayNoms +' > '+ arrayEntries + '</br>');
+    document.writeln('</br><b>REDUCE RIGHT:</b>' + arrayNoms +' > '+ arrayReduceR + '</br>');
 
     //REVERSE 
     let arrayReverse;
-    document.writeln('<b>ENTRIES:</b>' + arrayNoms +' > '+ arrayEntries + '</br>');
+    document.writeln('</br><b>REVERSE:</b>' + arrayNoms +' > '+ arrayReverse + '</br>');
 
     //SHIFT 
     let arrayShift;
-    document.writeln('<b>ENTRIES:</b>' + arrayNoms +' > '+ arrayEntries + '</br>');
+    document.writeln('</br><b>SHIFT:</b>' + arrayNoms +' > '+ arrayShift + '</br>');
 
     //SLICE 
     let arraySlice;
-    document.writeln('<b>ENTRIES:</b>' + arrayNoms +' > '+ arrayEntries + '</br>');
+    document.writeln('</br><b>SLICE:</b>' + arrayNoms +' > '+ arraySlice + '</br>');
 
     //SOME 
     let arraySome;
-    document.writeln('<b>ENTRIES:</b>' + arrayNoms +' > '+ arrayEntries + '</br>');
+    document.writeln('</br><b>SOME:</b>' + arrayNoms +' > '+ arraySome + '</br>');
     
     //SORT
     let arraySort;
-    document.writeln('<b>ENTRIES:</b>' + arrayNoms +' > '+ arrayEntries + '</br>');
+    document.writeln('</br><b>SORT:</b>' + arrayNoms +' > '+ arraySort + '</br>');
     
     //SPLICE
     let arraySplice;
-    document.writeln('<b>SPLICE:</b>' + arrayNoms +' > '+ arraySplice + '</br>');
+    document.writeln('</br><b>SPLICE:</b>' + arrayNoms +' > '+ arraySplice + '</br>');
     
-    //TOSTRING
-    let arrayToString;
-    document.writeln('<b>TO STRING:</b>' + arrayNoms +' > '+ arrayToString + '</br>');
+    //TOSTRING - FET
+    let arrayToString = arrayNoms.toString();
+    document.writeln('</br><b>TO STRING:</b>' + arrayNoms +' > '+ arrayToString + '</br>');
     
     //UNSHIFT
     let arrayUnshift;
-    document.writeln('<b>UNSHIFT:</b>' + arrayNoms +' > '+ arrayUnshift + '</br>');
+    document.writeln('</br><b>UNSHIFT:</b>' + arrayNoms +' > '+ arrayUnshift + '</br>');
 
     //VALUEOF 
     let arrayValueOf;
-    document.writeln('<b>VALUE OF:</b>' + arrayNoms +' > '+ arrayValueOf + '</br>');
+    document.writeln('</br><b>VALUE OF:</b>' + arrayNoms +' > '+ arrayValueOf + '</br>');
 }
