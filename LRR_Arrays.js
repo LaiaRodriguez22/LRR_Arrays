@@ -44,6 +44,7 @@ function lrrFunctionsArray(){
 
     //ARRAYS QUE UTILITZO DURANT TOT L'EXERCICI
     let arrayNoms = ['David Arguelles', 'Harpreet Kaur', 'Laia Rodriguez'];
+    let arrayNomsNoCopy = ['David Arguelles', 'Harpreet Kaur', 'Laia Rodriguez'];
     let array = [1, 2, 3, 4, 5];
    
     //AT:
@@ -55,34 +56,49 @@ function lrrFunctionsArray(){
     document.writeln('</br><b>CONCAT:</b>' + arrayNoms +' > '+ arrayConcat + '</br>');
 
     //CONSTRUCTOR:
-    let arrayConstructor;
+    let arrayConstructor = new Array(arrayNoms);
     document.writeln('</br><b>CONSTRUCTOR:</b>' + arrayNoms +' > '+ arrayConstructor + '</br>');
 
     //COPYWITHIN:
-    let arrayCopy;
+    let arrayCopy = arrayNoms.slice();
+    arrayCopy.copyWithin(2);
     document.writeln('</br><b>COPY:</b>' + arrayNoms +' > '+ arrayCopy + '</br>');
 
     //ENTRIES:
-    let arrayEntries;
-    document.writeln('</br><b>ENTRIES:</b>' + arrayNoms +' > '+ arrayEntries + '</br>');
+    let arrayEntries = arrayNoms.entries();
+    document.writeln('</br><b>ENTRIES:</b></br>');
+
+    for (let entry of arrayEntries) {
+        document.writeln(entry + '<br>');
+    }
 
     //EVERY:
-    let arrayEvery;
+    let arrayEvery = arrayNoms.every(colorMenor);
     document.writeln('</br><b>EVERY:</b>' + arrayNoms +' > '+ arrayEvery + '</br>');
 
     //FILL:
-    let arrayFill;
+    let arrayFill = arrayNoms.slice();
+    arrayFill.fill('Juan Daniel');
     document.writeln('</br><b>FILL:</b>' + arrayNoms +' > '+ arrayFill + '</br>');
 
-    //FILTER:
-    let arrayFilter;
+    //FILTER: ------------- NO SÉ PAS SI AIXO ES EL QUE VOL EXACTAMENT. 
+    let arrayFilter = arrayNoms.filter(function(nom) {
+        return nom.includes('David');
+      });
     document.writeln('</br><b>FILTER:</b>' + arrayNoms +' > '+ arrayFilter + '</br>');
 
     //FIND:
-    let arrayFind;
+    let nomABuscar = 'Harpreet';
+
+    let persona = arrayNoms.find(function(element) {
+        return element.includes(nomABuscar);
+    });
+
+    let arrayFind = persona;
+
     document.writeln('</br><b>FIND:</b>' + arrayNoms +' > '+ arrayFind + '</br>');
 
-    //FINDINDEX:
+    //FINDINDEX: ---------- FINS AQUI. 
     let arrayFindInd;
     document.writeln('</br><b>FIND INDEX:</b>' + arrayNoms +' > '+ arrayFindInd + '</br>');
 
