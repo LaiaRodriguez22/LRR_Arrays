@@ -43,8 +43,8 @@ function colorMenor(array){
 function lrrFunctionsArray(){
 
     //ARRAYS QUE UTILITZO DURANT TOT L'EXERCICI
-    let arrayNoms = ['David Arguelles', 'Harpreet Kaur', 'Laia Rodriguez'];
-    let arrayNomsNoCopy = ['David Arguelles', 'Harpreet Kaur', 'Laia Rodriguez'];
+    let arrayNoms = ['David Arguellues', 'Harpreet Kaur', 'Laia Rodriguez'];
+    let arrayNomsNoCopy = ['David Arguellues', 'Harpreet Kaur', 'Laia Rodriguez'];
     let array = [1, 2, 3, 4, 5];
    
     //AT:
@@ -110,13 +110,16 @@ function lrrFunctionsArray(){
     let arrayFlat = arrayNomsSubArray.flat();
     document.writeln('</br><b>FLAT:</b>' + arrayNoms +' > '+ arrayFlat + '</br>');
 
-    //FLATMAP: ---------- FINS AQUI
-    let arrayFlatM;
+    //FLATMAP:
+    let arrayFlatM = arrayNoms.flatMap(function(nom) {
+        return nom.split(' ');
+    });
+      
     document.writeln('</br><b>FLAT MAP:</b>' + arrayNoms +' > '+ arrayFlatM + '</br>');
 
-    //FOR EACH
-    let arrayFE;
-    document.writeln('</br><b>FOR EACH:</b>' + arrayNoms +' > '+ arrayFE + '</br>');
+    //FOR EACH ---------- FINS AQUI
+    let arrayFE = arrayNoms.slice();
+    document.writeln('</br><b>FOR EACH:</b>' + arrayFE +' </br>');
 
     //FROM:
     let arrayFrom;
