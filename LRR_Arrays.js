@@ -81,7 +81,7 @@ function lrrFunctionsArray(){
     arrayFill.fill('Juan Daniel');
     document.writeln('</br><b>FILL:</b>' + arrayNoms +' > '+ arrayFill + '</br>');
 
-    //FILTER: ------------- NO SÉ PAS SI AIXO ES EL QUE VOL EXACTAMENT. 
+    //FILTER:
     let arrayFilter = arrayNoms.filter(function(nom) {
         return nom.includes('David');
       });
@@ -98,15 +98,19 @@ function lrrFunctionsArray(){
 
     document.writeln('</br><b>FIND:</b>' + arrayNoms +' > '+ arrayFind + '</br>');
 
-    //FINDINDEX: ---------- FINS AQUI. 
-    let arrayFindInd;
+    //FINDINDEX:
+    let arrayFindInd= arrayNoms.findIndex(function(element) {
+        return element.includes('Harpreet Kaur');
+      });
+
     document.writeln('</br><b>FIND INDEX:</b>' + arrayNoms +' > '+ arrayFindInd + '</br>');
 
     //FLAT:
-    let arrayFlat;
+    let arrayNomsSubArray = ['David Arguelles', ['Harpreet Kaur', 'Laia Rodriguez'], 'John Doe'];
+    let arrayFlat = arrayNomsSubArray.flat();
     document.writeln('</br><b>FLAT:</b>' + arrayNoms +' > '+ arrayFlat + '</br>');
 
-    //FLATMAP:
+    //FLATMAP: ---------- FINS AQUI
     let arrayFlatM;
     document.writeln('</br><b>FLAT MAP:</b>' + arrayNoms +' > '+ arrayFlatM + '</br>');
 
@@ -151,7 +155,8 @@ function lrrFunctionsArray(){
     document.writeln('</br><b>MAP:</b>' + arrayNoms +' > '+ arrayMap + '</br>');
 
     //POP
-    let arrayPop;
+    let arrayPop = arrayNoms.slice();
+    arrayPop.pop();
     document.writeln('</br><b>POP:</b>' + arrayNoms +' > '+ arrayPop + '</br>');
 
     //PROTOTYPE
@@ -159,7 +164,8 @@ function lrrFunctionsArray(){
     document.writeln('</br><b>PROTOTYPE:</b>' + arrayNoms +' > '+ arrayProto + '</br>');
     
     //PUSH
-    let arrayPush;
+    let arrayPush = arrayNoms.slice();
+    arrayPush.push('Stitchu');
     document.writeln('</br><b>PUSH:</b>' + arrayNoms +' > '+ arrayPush + '</br>');
 
     //REDUCE 
