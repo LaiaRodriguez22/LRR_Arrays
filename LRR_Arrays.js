@@ -43,8 +43,8 @@ function colorMenor(array){
 function lrrFunctionsArray(){
 
     //ARRAYS QUE UTILITZO DURANT TOT L'EXERCICI
-    let arrayNoms = ['David Arguellues', 'Harpreet Kaur', 'Laia Rodriguez'];
-    let arrayNomsNoCopy = ['David Arguellues', 'Harpreet Kaur', 'Laia Rodriguez'];
+    let arrayNoms = ['David Arguelles', 'Harpreet Kaur', 'Laia Rodriguez'];
+    let arrayNomsNoCopy = ['David Arguelles', 'Harpreet Kaur', 'Laia Rodriguez'];
     let array = [1, 2, 3, 4, 5];
    
     //AT:
@@ -116,25 +116,28 @@ function lrrFunctionsArray(){
     });
       
     document.writeln('</br><b>FLAT MAP:</b>' + arrayNoms +' > '+ arrayFlatM + '</br>');
-
-    //FOR EACH ---------- FINS AQUI
+    
+    //FOR EACH 
     let arrayFE = arrayNoms.slice();
-    document.writeln('</br><b>FOR EACH:</b>' + arrayFE +' </br>');
+    arrayFE.forEach(function(nom, index) {
+        arrayFE[index] = nom + ' FOR EACH';
+    });
+    document.writeln('<br><b>FOR EACH:</b>' + arrayNoms + ' > ' + arrayFE + '</br>');
 
     //FROM:
-    let arrayFrom;
+    let arrayFrom = Array.from(arrayNoms);
     document.writeln('</br><b>FROM:</b>' + arrayNoms +' > '+ arrayFrom + '</br>');
 
     //INCLUDES:
-    let arrayInclude;
+    let arrayInclude = arrayNoms.includes('Laia Rodriguez');
     document.writeln('</br><b>INCLUDES:</b>' + arrayNoms +' > '+ arrayInclude + '</br>');
 
     //INDEX:
-    let arrayInd;
+    let arrayInd = arrayNoms.indexOf('Laia Rodriguez');
     document.writeln('</br><b>INDEX:</b>' + arrayNoms +' > '+ arrayInd + '</br>');
 
     //ISARRAY:
-    let arrayIsArr;
+    let arrayIsArr = Array.isArray(arrayNoms);
     document.writeln('</br><b>IS ARRAY:</b>' + arrayNoms +' > '+ arrayIsArr + '</br>');
 
     //JOIN:
@@ -142,19 +145,21 @@ function lrrFunctionsArray(){
     document.writeln('</br><b>JOIN:</b>' + arrayNoms +' > '+ arrayJoin + '</br>');
     
     //KEYS:
-    let arrayKeys = arrayNoms.keys();
+    let arrayKeys = Array.from(arrayNoms.keys());
     document.writeln('</br><b>KEYS:</b>' + arrayNoms +' > '+ arrayKeys + '</br>');
 
     //LASTINDEX:
-    let arrayLastI;
+    let arrayLastI = arrayNoms.lastIndexOf('Laia Rodriguez');
     document.writeln('</br><b>LAST INDEX:</b>' + arrayNoms +' > '+ arrayLastI + '</br>');
 
     //LENGTH
-    let arrayLength;
+    let arrayLength = arrayNoms.length;
     document.writeln('</br><b>LENGHT:</b>' + arrayNoms +' > '+ arrayLength + '</br>');
     
     //MAP 
-    let arrayMap;
+    let arrayMap = arrayNoms.map(function(nom) {
+        return nom.toUpperCase();
+    });
     document.writeln('</br><b>MAP:</b>' + arrayNoms +' > '+ arrayMap + '</br>');
 
     //POP
@@ -163,55 +168,66 @@ function lrrFunctionsArray(){
     document.writeln('</br><b>POP:</b>' + arrayNoms +' > '+ arrayPop + '</br>');
 
     //PROTOTYPE
-    let arrayProto;
+    let arrayProto = Object.getPrototypeOf(arrayNoms);
     document.writeln('</br><b>PROTOTYPE:</b>' + arrayNoms +' > '+ arrayProto + '</br>');
-    
+
     //PUSH
     let arrayPush = arrayNoms.slice();
     arrayPush.push('Stitchu');
-    document.writeln('</br><b>PUSH:</b>' + arrayNoms +' > '+ arrayPush + '</br>');
+    document.writeln('<br><b>PUSH:</b>' + arrayNoms + ' > ' + arrayPush + '</br>');
 
-    //REDUCE 
-    let arrayReduce;
-    document.writeln('</br><b>REDUCE:</b>' + arrayNoms +' > '+ arrayReduce + '</br>');
+    //REDUCE
+    let arrayReduce = arrayNoms.reduce(function(acum, nom) {
+    return acum + ' ' + nom;
+    }, '');
+    document.writeln('<br><b>REDUCE:</b>' + arrayNoms + ' > ' + arrayReduce + '</br>');
 
-    //REDUCERIGHT 
-    let arrayReduceR;
-    document.writeln('</br><b>REDUCE RIGHT:</b>' + arrayNoms +' > '+ arrayReduceR + '</br>');
+    //REDUCE RIGHT
+    let arrayReduceR = arrayNoms.reduceRight(function(acum, nom) {
+    return acum + ' ' + nom;
+    }, '');
+    document.writeln('<br><b>REDUCE RIGHT:</b>' + arrayNoms + ' > ' + arrayReduceR + '</br>');
 
-    //REVERSE 
-    let arrayReverse;
-    document.writeln('</br><b>REVERSE:</b>' + arrayNoms +' > '+ arrayReverse + '</br>');
+    //REVERSE
+    let arrayReverse = arrayNoms.slice().reverse();
+    document.writeln('<br><b>REVERSE:</b>' + arrayNoms + ' > ' + arrayReverse + '</br>');
 
-    //SHIFT 
-    let arrayShift;
-    document.writeln('</br><b>SHIFT:</b>' + arrayNoms +' > '+ arrayShift + '</br>');
+    //SHIFT
+    let arrayShift = arrayNoms.slice();
+    arrayShift.shift();
+    document.writeln('<br><b>SHIFT:</b>' + arrayNoms + ' > ' + arrayShift + '</br>');
 
-    //SLICE 
-    let arraySlice;
-    document.writeln('</br><b>SLICE:</b>' + arrayNoms +' > '+ arraySlice + '</br>');
+    //SLICE
+    let arraySlice = arrayNoms.slice(0,1);
+    document.writeln('<br><b>SLICE:</b>' + arrayNoms + ' > ' + arraySlice + '</br>');
 
-    //SOME 
-    let arraySome;
-    document.writeln('</br><b>SOME:</b>' + arrayNoms +' > '+ arraySome + '</br>');
-    
+    //SOME
+    let arraySome = arrayNoms.some(function(nom) {
+        return nom.includes('lles');
+    });
+    document.writeln('<br><b>SOME:</b>' + arrayNoms + ' > ' + arraySome + '</br>');
+
     //SORT
-    let arraySort;
-    document.writeln('</br><b>SORT:</b>' + arrayNoms +' > '+ arraySort + '</br>');
-    
+    let arraySort = arrayNoms.slice();
+    arraySort.sort();
+    document.writeln('<br><b>SORT:</b>' + arrayNoms + ' > ' + arraySort + '</br>');
+
     //SPLICE
-    let arraySplice;
-    document.writeln('</br><b>SPLICE:</b>' + arrayNoms +' > '+ arraySplice + '</br>');
-    
-    //TOSTRING - FET
+    let arraySplice = arrayNoms.slice();
+    arraySplice.splice(1, 1,'Meitat del array');
+    document.writeln('<br><b>SPLICE:</b>' + arrayNoms + ' > ' + arraySplice + '</br>');
+
+    //TO STRING
     let arrayToString = arrayNoms.toString();
-    document.writeln('</br><b>TO STRING:</b>' + arrayNoms +' > '+ arrayToString + '</br>');
-    
+    document.writeln('<br><b>TO STRING:</b>' + arrayNoms + ' > ' + arrayToString + '</br>');
+
     //UNSHIFT
-    let arrayUnshift;
-    document.writeln('</br><b>UNSHIFT:</b>' + arrayNoms +' > '+ arrayUnshift + '</br>');
+    let arrayUnshift = arrayNoms.slice();
+    arrayUnshift.unshift('Primera posicio');
+    document.writeln('<br><b>UNSHIFT:</b>' + arrayNoms + ' > ' + arrayUnshift + '</br>');
 
     //VALUEOF 
-    let arrayValueOf;
+    let arrayValueOf = arrayNoms.valueOf();
     document.writeln('</br><b>VALUE OF:</b>' + arrayNoms +' > '+ arrayValueOf + '</br>');
+    
 }
